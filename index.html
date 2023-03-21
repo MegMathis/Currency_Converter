@@ -15,79 +15,109 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/style.css"/>
   </head>
   <header>
-    <h1 class="is-size-1 has-text-white has-text-weight-bold has-text-centered">
+    <h1 class="hero is-size-1 has-text-white has-background-success has-text-centered">
       Currency Converter
     </h1>
-    <p class="is-size-5 has-text-white has-text-centered">
+    <p class="subtitle has-text-white has-text-centered">
       How to use: Enter the value then select the first and second country of
       your choice. Click the "Convert" button and currency will convert to the
       second selected country.
     </p>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="#"></a>
+            </div> 
+        </div>
+        
+
   </header>
   <!-- navbar with dropdown -->
 
   <body class="has-background-success-dark">
-    {margin: 0; } .banner {
+    <div class="container">
+        <div class="row">
+            <form class="form-inline">
+                <div class="form-group col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">Enter Amount></span><input type="number" class="label"/><span class="input-group-addon"></span>
+                        <span class="input-group-addon">From</span>
+                    
+                    
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
 
-    <img
-      src="https://www.pexels.com/photo/collection-of-banknotes-with-dollar-bill-on-top-4025825/"
-    />
-    }
 
-    <div class="banner">
-      <div class="banner__content">
-        <div class="banner__text"></div>
-        <
+
+
+
     </div>
-
-    <div class="field">
+        <!-- <div class = "level-item has-text-center">
+            <div>
+            <form>
+                <label class="label">Enter Amount</label>
+            </form>
+            </div>
+            <div><input id="enter-amount" type="text" placeholder="Amount" /></div>  -->
+            
+        </div>
       <form>
-        <label class="label">Enter Amount</label>
-        <div class="control">
-          <input id="enter-amount" type="text" placeholder="Amount" />
-        </div>
-        <div>
-          <label>From</label>
-          <select id="from-values">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="JPY">JPY</option>
-            <option value="GBP">GBP</option>
-            <option value="AUD">AUD</option>
-            <option value="CAD">CAD</option>
-            <option value="CHF">CHF</option>
-            <option value="CNH">CNH</option>
-            <option value="HKD">HKD</option>
-            <option value="NZD">NZD</option>
-          </select>
-        </div>
+        <div class="field is-horizontal">
+            <div>
+                 
+            </div>
+            <div class="control">
+                
+            </div>
+        
+          <div class="field">
+                <label>From</label>
+                    <select id="from-values">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="JPY">JPY</option>
+                        <option value="GBP">GBP</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CNH">CNH</option>
+                        <option value="HKD">HKD</option>
+                        <option value="NZD">NZD</option>
+                    </select>
+          </div>
+        
         <div>
           <label>To</label>
-          <select id="to-values">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="JPY">JPY</option>
-            <option value="GBP">GBP</option>
-            <option value="AUD">AUD</option>
-            <option value="CAD">CAD</option>
-            <option value="CHF">CHF</option>
-            <option value="CNH">CNH</option>
-            <option value="HKD">HKD</option>
-            <option value="NZD">NZD</option>
-          </select>
-          <input
+            <select id="to-values">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CNH">CNH</option>
+                <option value="HKD">HKD</option>
+                <option value="NZD">NZD</option>
+            </select>
+          
+            <input
             id="converted-amount"
             type="text"
             placeholder="Converted Amount"
           />
         </div>
+    </div>
       </form>
 
       <button>Convert</button>
     </div>
+</nav>
 
     <aside id="side-bar">Quick Converter</aside>
 
@@ -101,7 +131,7 @@
       id="map"
       class="map map-home leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
       style="
-        height: 1000px;
+        height: 500px;
         margin-top: 50px;
         position: relative;
         outline: none;
@@ -355,6 +385,6 @@
     ></script>
     <script src="JS/script.js"></script>
 
-    <footer>&copy; <em id="2023"></em></footer>
+    <footer>&copy 2023; <em id="2023"></em></footer>
   </body>
 </html>

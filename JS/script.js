@@ -7,7 +7,26 @@
 // LOG RECENT SEARCHES TO LOCAL STORAGE
 var baseURL2 = "https://api.api-ninjas.com/v1/convertcurrency";
 var XapiKey = "M0vu/BzO4EbdPftHtN5CgA==q1HuSPxAewTNC1hi";
+var currencyFrom = $('#from-values').val();
+var currencyTo = $('#to-values').val();
+var amount = $('#amount').val();
+console.log(currencyFrom)
 
+
+$.ajax({
+    method: 'GET',
+    url: 'https://api.api-ninjas.com/v1/convertcurrency?want=EUR&have=USD&amount=5000',
+    headers: { 'X-Api-Key': 'M0vu/BzO4EbdPftHtN5CgA==q1HuSPxAewTNC1hi'},
+    contentType: 'application/json',
+    success: function(result) {
+        console.log(result);
+    },
+    error: function ajaxError(jqXHR) {
+        console.error('Error: ', jqXHR.responseText);
+    }
+});
+
+// ------------------example-code------------------------------------------
 $.ajax({
   method: "GET",
   url: "https://api.api-ninjas.com/v1/convertcurrency?want=EUR&have=USD&amount=5000",

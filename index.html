@@ -15,24 +15,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
+    <link rel="stylesheet" href="CSS/mystyles.scss" />
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <header>
     <h1
-      class="hero is-size-1 has-text-white has-background-success has-text-centered"
+      class="Hero is-size-2 has-text-white has-background-success has-text-centered"
     >
       Currency Converter
     </h1>
-    <p class="subtitle has-text-white has-text-centered">
+    <p class="is-size-5 has-text-white has-text-centered">
       How to use: Enter the value then select the first and second country of
       your choice. Click the "Convert" button and currency will convert to the
       second selected country.
     </p>
-    <div class="wrapper">
-      <div class="logo">
-        <a href="#"></a>
-      </div>
-    </div>
   </header>
   <!-- navbar with dropdown -->
 
@@ -53,8 +49,8 @@
       <div class="field">
         <label class="label">From</label>
         <div class="control">
-          <div class="select">
-            <select id="from-values">
+          <!-- <div class="select"> -->
+            <select class="select" id="from-values">
               <option value="USD">USD</option>
               <option value="EUR">EUR</option>
               <option value="JPY">JPY</option>
@@ -62,7 +58,7 @@
               <option value="AUD">AUD</option>
               <option value="CAD">CAD</option>
               <option value="CHF">CHF</option>
-              <option value="CNH">CNH</option>
+              <option value="MXN">MXN</option>
               <option value="HKD">HKD</option>
               <option value="NZD">NZD</option>
             </select>
@@ -82,7 +78,7 @@
               <option value="AUD">AUD</option>
               <option value="CAD">CAD</option>
               <option value="CHF">CHF</option>
-              <option value="CNH">CNH</option>
+              <option value="MXN">MXN</option>
               <option value="HKD">HKD</option>
               <option value="NZD">NZD</option>
             </select>
@@ -93,21 +89,21 @@
       <div class="field">
         <label class="label">Converted Amount</label>
         <div class="control">
-          <input
+          <textarea
             class="input"
             id="converted-amount"
             type="text"
             placeholder="Converted Amount"
-          />
+          >
+          </textarea>
+        </div>
+      </div>
+      <!-- <div class="button-holder"> -->
+        <div class="control">
+          <button class="convert button-holder">Convert</button>
         </div>
       </div>
     </nav>
-
-    <div class="btn-holder">
-      <div class="control">
-        <button class="button is-link">Convert</button>
-      </div>
-    </div>
 
     <aside id="side-bar">Quick Converter</aside>
 

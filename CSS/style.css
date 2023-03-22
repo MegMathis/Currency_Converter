@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700;900&family=Kanit&display=swap");
 
 * {
   margin: 0;
@@ -7,10 +7,12 @@
 }
 
 .body {
+  font-family: "Kanit", sans-serif !important;
   background-color: forestgreen;
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -18,10 +20,12 @@
   padding: 10px 24px;
   border-radius: 20px;
   width: 490px;
+  border: none;
 }
 
-.h1 {
+h1 {
   font-family: "Kanit", sans-serif;
+  font-style: normal;
   color: #fff;
   font-weight: 100%;
   font-size: 2rem;
@@ -32,21 +36,54 @@
   display: flex;
 }
 
-nav {
+.nav {
   min-width: 100vh;
   display: flex;
   justify-content: space-between;
   padding: 10%;
-  margin-top: 1%;
+  margin-top: 10%;
   margin: 10%;
   margin-bottom: 0;
   flex-wrap: wrap;
 }
 
-.btn-holder {
-  text-align: center;
-  margin-top: -75px;
+.box div {
+  width: 100%;
 }
 
-/* .box div {
-} */
+.select {
+  width: 40%;
+  height: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: #38dfa7;
+  outline: none;
+  color: black;
+  margin: 0.2em 0;
+  padding: 0 1em;
+  border-radius: 10px;
+  border: none;
+}
+
+.input {
+  width: 55%;
+  height: 40px;
+  font-size: 1em;
+  margin: 0.2em 0;
+  border-radius: 10px;
+  border: none;
+  background: #cccccc;
+  outline: none;
+}
+
+.button-holder {
+  width: 98%;
+  height: 40px;
+  background: rgb(10, 43, 10);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1 rem;
+  margin: 0.5 em 0;
+}

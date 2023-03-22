@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +8,45 @@
 
 .body {
   background-color: forestgreen;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  padding: 10px 24px;
+  border-radius: 20px;
+  width: 490px;
 }
 
 .h1 {
   font-family: "Kanit", sans-serif;
   color: #fff;
-  font-weight: 600;
+  font-weight: 100%;
   font-size: 2rem;
 }
+
+.container .box {
+  width: 100%;
+  display: flex;
+}
+
+nav {
+  min-width: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 10%;
+  margin-top: 1%;
+  margin: 10%;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+
+.btn-holder {
+  text-align: center;
+  margin-top: -75px;
+}
+
+/* .box div {
+} */

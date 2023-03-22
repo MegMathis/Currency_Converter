@@ -15,78 +15,98 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <header>
-    <h1 class="is-size-1 has-text-white has-text-weight-bold has-text-centered">
+    <h1
+      class="hero is-size-1 has-text-white has-background-success has-text-centered"
+    >
       Currency Converter
     </h1>
-    <p class="is-size-5 has-text-white has-text-centered">
+    <p class="subtitle has-text-white has-text-centered">
       How to use: Enter the value then select the first and second country of
       your choice. Click the "Convert" button and currency will convert to the
       second selected country.
     </p>
+    <div class="wrapper">
+      <div class="logo">
+        <a href="#"></a>
+      </div>
+    </div>
   </header>
   <!-- navbar with dropdown -->
 
   <body class="has-background-success-dark">
-    {margin: 0; } .banner {
-
-    <img
-      src="https://www.pexels.com/photo/collection-of-banknotes-with-dollar-bill-on-top-4025825/"
-    />
-    }
-
-    <div class="banner">
-      <div class="banner__content">
-        <div class="banner__text"></div>
-        <
-    </div>
-
-    <div class="field">
-      <form>
+    <nav>
+      <div class="field">
         <label class="label">Enter Amount</label>
         <div class="control">
-          <input id="enter-amount" type="number" placeholder="Amount" />
-        </div>
-        <div>
-          <label>From</label>
-          <select id="from-values">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="JPY">JPY</option>
-            <option value="GBP">GBP</option>
-            <option value="AUD">AUD</option>
-            <option value="CAD">CAD</option>
-            <option value="CHF">CHF</option>
-            <option value="CNH">CNH</option>
-            <option value="HKD">HKD</option>
-            <option value="NZD">NZD</option>
-          </select>
-        </div>
-        <div>
-          <label>To</label>
-          <select id="to-values">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="JPY">JPY</option>
-            <option value="GBP">GBP</option>
-            <option value="AUD">AUD</option>
-            <option value="CAD">CAD</option>
-            <option value="CHF">CHF</option>
-            <option value="CNH">CNH</option>
-            <option value="HKD">HKD</option>
-            <option value="NZD">NZD</option>
-          </select>
           <input
+            class="input"
+            id="enter-amount"
+            type="text"
+            placeholder="Amount"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">From</label>
+        <div class="control">
+          <div class="select">
+            <select id="from-values">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="JPY">JPY</option>
+              <option value="GBP">GBP</option>
+              <option value="AUD">AUD</option>
+              <option value="CAD">CAD</option>
+              <option value="CHF">CHF</option>
+              <option value="CNH">CNH</option>
+              <option value="HKD">HKD</option>
+              <option value="NZD">NZD</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">To</label>
+        <div class="control">
+          <div class="select">
+            <select id="to-values">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="JPY">JPY</option>
+              <option value="GBP">GBP</option>
+              <option value="AUD">AUD</option>
+              <option value="CAD">CAD</option>
+              <option value="CHF">CHF</option>
+              <option value="CNH">CNH</option>
+              <option value="HKD">HKD</option>
+              <option value="NZD">NZD</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Converted Amount</label>
+        <div class="control">
+          <input
+            class="input"
             id="converted-amount"
             type="text"
             placeholder="Converted Amount"
           />
         </div>
-      </form>
+      </div>
+    </nav>
 
-      <button>Convert</button>
+    <div class="btn-holder">
+      <div class="control">
+        <button class="button is-link">Convert</button>
+      </div>
     </div>
 
     <aside id="side-bar">Quick Converter</aside>
@@ -100,12 +120,7 @@
     <div
       id="map"
       class="map map-home leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
-      style="
-        height: 1000px;
-        margin-top: 50px;
-        position: relative;
-        outline: none;
-      "
+      style="height: 500px; margin-top: 50px; position: relative; outline: none"
       tabindex="0"
     >
       <div
@@ -355,6 +370,6 @@
     ></script>
     <script src="JS/script.js"></script>
 
-    <footer>&copy; <em id="2023"></em></footer>
+    <footer>&copy 2023; <em id="2023"></em></footer>
   </body>
 </html>

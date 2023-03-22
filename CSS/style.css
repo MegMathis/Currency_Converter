@@ -8,12 +8,16 @@
 
 .body {
   background-color: forestgreen;
-  height: ;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
+.container {
+  background-color: white;
+  padding: 10px 24px;
+  border-radius: 20px;
+  width: 490px;
 }
 
 .h1 {
@@ -23,24 +27,26 @@
   font-size: 2rem;
 }
 
-.paragraph {
-  font-family: sans-serif;
-  color: #fff;
-  font-size: 14px;
+.container .box {
+  width: 100%;
+  display: flex;
 }
 
-.header {
-  height: 50px;
-  width: 50%;
-  background-color: none;
-  top: 0;
+nav {
+  min-width: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 10%;
+  margin-top: 1%;
+  margin: 10%;
+  margin-bottom: 0;
+  flex-wrap: wrap;
 }
 
-.logo {
-  width: 30%;
+.btn-holder {
   text-align: center;
+  margin-top: -75px;
 }
 
-.field {
-  text-align: center;
-}
+/* .box div {
+} */

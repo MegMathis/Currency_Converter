@@ -15,16 +15,8 @@
   justify-content: center;
 }
 
-.container {
-  background-color: white;
-  padding: 10px 24px;
-  border-radius: 20px;
-  width: 490px;
-  border: none;
-}
-
 h1 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Kanit", sans-serif !important;
   font-style: normal;
   color: #fff;
   font-weight: 100%;
@@ -34,10 +26,21 @@ h1 {
 .container .box {
   width: 100%;
   display: flex;
+  align-items: center;
+}
+
+#navwrap {
+  justify-content: space-between;
+  text-align: center;
+}
+
+nav {
+  width: 70%;
 }
 
 .nav {
   min-width: 100vh;
+  text-align: center;
   display: flex;
   justify-content: space-between;
   padding: 10%;
@@ -52,21 +55,21 @@ h1 {
 }
 
 .select {
-  width: 40%;
+  width: 50%;
   height: 20px;
   font-size: 1.2rem;
   cursor: pointer;
   background: #38dfa7;
   outline: none;
   color: black;
-  margin: 0.2em 0;
+  margin: 0.3em 0;
   padding: 0 1em;
   border-radius: 10px;
   border: none;
 }
 
 .input {
-  width: 55%;
+  width: 50%;
   height: 40px;
   font-size: 1em;
   margin: 0.2em 0;
@@ -77,13 +80,71 @@ h1 {
 }
 
 .button-holder {
-  width: 98%;
+  width: 55%;
   height: 40px;
   background: rgb(10, 43, 10);
   color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
   font-size: 1 rem;
-  margin: 0.5 em 0;
+  margin: 0.1 em 0;
+  display: inline-block;
+  padding: 0 1em;
+}
+
+.button-holder:hover {
+  width: 50%;
+  scale: 1.05;
+}
+
+.button-holder:active {
+  width: 50%;
+  scale: 0.9;
+}
+
+#side-bar {
+  justify-content: center;
+}
+
+.convert-box {
+  margin-right: 15%;
+  margin-top: 4.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 15px;
+  padding: 10%;
+  background-color: white;
+  border: round;
+  border-radius: 30px;
+  margin-right: 20%;
+  min-width: 40px;
+}
+
+#quick-convert {
+  display: flex;
+  flex-wrap: nowrap;
+  color: #363636;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif !important;
+  margin-right: 50%;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+h6 {
+  color: #363636;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif !important;
+  font-size: 1.25em;
+  margin-top: 20%;
+  width: 300px;
+}
+
+footer {
+  font-weight: bold;
+  text-align: center;
 }

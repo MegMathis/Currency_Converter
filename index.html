@@ -33,6 +33,7 @@
   <!-- navbar with dropdown -->
 
   <body class="has-background-success-dark">
+    <section id="navwrap" class="is-flex">
     <nav>
       <div class="field">
         <label class="label">Enter Amount</label>
@@ -49,7 +50,7 @@
       <div class="field">
         <label class="label">From</label>
         <div class="control">
-          <!-- <div class="select"> -->
+          <div>
             <select class="select" id="from-values">
               <option value="USD">USD</option>
               <option value="EUR">EUR</option>
@@ -69,8 +70,8 @@
       <div class="field">
         <label class="label">To</label>
         <div class="control">
-          <div class="select">
-            <select id="to-values">
+          <div>
+            <select class="select" id="to-values">
               <option value="USD">USD</option>
               <option value="EUR">EUR</option>
               <option value="JPY">JPY</option>
@@ -104,8 +105,15 @@
         </div>
       </div>
     </nav>
+    <div class="convert-box">
+    <div id="quick-convert">Quick Converter</div>
+      <h6></h6>
+     
+    </div>
+    
 
-    <aside id="side-bar">Quick Converter</aside>
+    <!-- <aside id="side-bar">Quick Converter</aside> -->
+  </section>
 
     <!--center image with zoom in feature -->
     <!--sidebar past lookups  -->
@@ -366,6 +374,6 @@
     ></script>
     <script src="JS/script.js"></script>
 
-    <footer>&copy 2023; <em id="2023"></em></footer>
+    <footer>&copy 2023 <em id="2023"></em></footer>
   </body>
 </html>

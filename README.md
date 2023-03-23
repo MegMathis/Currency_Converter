@@ -18,7 +18,13 @@ N/A
 
 ## Screenshot
 
+![Screenshot.](./images/Currency_Converter_Screenshot.png)
+
 ## Link to Deployment
+
+https://github.com/MegMathis/Currency_Converter
+
+https://megmathis.github.io/Currency_Converter/
 
 ## Credits
 
